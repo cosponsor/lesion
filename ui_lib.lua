@@ -351,7 +351,7 @@ function initLibrary()
             TextSize = 14,
             TextColor3 = Color3.fromRGB(255, 255, 255),
             Text = name,
-            Font = Enum.Font.Code,
+            Font = Enum.Font.Arimo,
             TextXAlignment = Enum.TextXAlignment.Left,
             Parent = topbar
         })
@@ -427,7 +427,7 @@ function initLibrary()
                 TextSize = 14,
                 TextColor3 = Color3.fromRGB(255, 255, 255),
                 Text = name,
-                Font = toggled and Enum.Font.Code or Enum.Font.Code,
+                Font = toggled and Enum.Font.Arimo or Enum.Font.Arimo,
                 Parent = tabTogglesHolder
             })
             
@@ -497,12 +497,12 @@ function initLibrary()
             local function openTab()
                 for _, obj in next, tabTogglesHolder:GetChildren() do
                     if obj:IsA("TextButton") then
-                        obj.Font = Enum.Font.Code
+                        obj.Font = Enum.Font.Arimo
                     end
                 end
 
 
-                tabToggle.Font = Enum.Font.Code
+                tabToggle.Font = Enum.Font.Arimo
 
 
                 for _, obj in next, tabs:GetChildren() do
@@ -566,7 +566,7 @@ function initLibrary()
                     TextSize = 13,
                     TextColor3 = Color3.fromRGB(255, 255, 255),
                     Text = name,
-                    Font = Enum.Font.Code,
+                    Font = Enum.Font.Arimo,
                     TextXAlignment = Enum.TextXAlignment.Left,
                     Parent = sectionTopbar
                 })
@@ -615,7 +615,7 @@ function initLibrary()
                         TextSize = 13,
                         Text = text,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = sectionContent
                     })
@@ -654,7 +654,7 @@ function initLibrary()
                         TextSize = 13,
                         Text = text,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         Parent = sectionContent
                     })
 
@@ -716,7 +716,7 @@ function initLibrary()
                         ZIndex = 3,
                         Size = UDim2.new(1, 0, 0, 16),
                         BorderColor3 = Color3.fromRGB(22, 22, 22),
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                         Text = "",
                         TextXAlignment = Enum.TextXAlignment.Left,
@@ -741,7 +741,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = button
                     })
@@ -831,7 +831,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(180, 180, 180),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = icon
                     })
@@ -965,7 +965,7 @@ function initLibrary()
                         TextSize = 12,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = default,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         PlaceholderText = placeholder,
                         Parent = boxHolder
                     })
@@ -996,7 +996,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = boxHolder
                     })
@@ -1176,7 +1176,7 @@ function initLibrary()
                         TextSize = 12,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = valueText:gsub("%[VALUE%]", tostring(default)),
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         Parent = slider
                     })
 
@@ -1386,7 +1386,7 @@ function initLibrary()
                         TextSize = 12,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = valueText:gsub("%[VALUE%]", tostring(default)),
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         Parent = slider
                     })
 
@@ -1431,7 +1431,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = icon
                     })
@@ -1655,7 +1655,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = dropdownHolder
                     })
@@ -1667,7 +1667,7 @@ function initLibrary()
                         Position = UDim2.new(0, 0, 0, 20),
                         BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                         Text = "",
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = dropdownHolder
                     })
@@ -1687,7 +1687,7 @@ function initLibrary()
                         TextSize = 12,
                         TextColor3 = (multiChoice and (#default > 0 and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180))) or default and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180),
                         Text = multiChoice and (#default > 0 and table.concat(default, ", ") or "NONE") or (default or "NONE"),
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = open
                     })
@@ -1744,19 +1744,19 @@ function initLibrary()
                         for i, v in next, contentHolder:GetChildren() do
                             if v:IsA("TextButton") then
                                 v:FindFirstChildOfClass("UIPadding").PaddingLeft = UDim.new(0, 6)
-                                v.Font = Enum.Font.Code
+                                v.Font = Enum.Font.Arimo
                             end
                         end
 
 
-                        obj.Font = bool and Enum.Font.Code or Enum.Font.Code
+                        obj.Font = bool and Enum.Font.Arimo or Enum.Font.Arimo
                         padding.PaddingLeft = bool and UDim.new(0, 10) or UDim.new(0, 6)
                         value.TextColor3 = bool and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180)
                     end
 
 
                     local function multiSelectObj(obj, padding, bool)
-                        obj.Font = bool and Enum.Font.Code or Enum.Font.Code
+                        obj.Font = bool and Enum.Font.Arimo or Enum.Font.Arimo
                         padding.PaddingLeft = bool and UDim.new(0, 10) or UDim.new(0, 6)
                     end
                     
@@ -1774,7 +1774,7 @@ function initLibrary()
                             TextSize = 12,
                             TextColor3 = Color3.fromRGB(255, 255, 255),
                             Text = tostring(opt),
-                            Font = current == opt and Enum.Font.Code or Enum.Font.Code,
+                            Font = current == opt and Enum.Font.Arimo or Enum.Font.Arimo,
                             TextXAlignment = Enum.TextXAlignment.Left,
                             Parent = contentHolder
                         })
@@ -1919,7 +1919,7 @@ function initLibrary()
                                 for i, v in next, contentHolder:GetChildren() do
                                     if v:IsA("TextButton") then
                                         v:FindFirstChildOfClass("UIPadding").PaddingLeft = UDim.new(0, 6)
-                                        v.Font = Enum.Font.Code
+                                        v.Font = Enum.Font.Arimo
                                     end
                                 end
 
@@ -1941,7 +1941,7 @@ function initLibrary()
                                 for i, v in next, contentHolder:GetChildren() do
                                     if v:IsA("TextButton") then
                                         v:FindFirstChildOfClass("UIPadding").PaddingLeft = UDim.new(0, 6)
-                                        v.Font = Enum.Font.Code
+                                        v.Font = Enum.Font.Arimo
                                     end
                                 end
 
@@ -1975,7 +1975,7 @@ function initLibrary()
                             TextSize = 12,
                             TextColor3 = Color3.fromRGB(255, 255, 255),
                             Text = tostring(opt),
-                            Font = current == opt and Enum.Font.Code or Enum.Font.Code,
+                            Font = current == opt and Enum.Font.Arimo or Enum.Font.Arimo,
                             TextXAlignment = Enum.TextXAlignment.Left,
                             Parent = contentHolder
                         })
@@ -2098,7 +2098,7 @@ function initLibrary()
                                 TextSize = 12,
                                 TextColor3 = Color3.fromRGB(255, 255, 255),
                                 Text = tostring(opt),
-                                Font = current == opt and Enum.Font.Code or Enum.Font.Code,
+                                Font = current == opt and Enum.Font.Arimo or Enum.Font.Arimo,
                                 TextXAlignment = Enum.TextXAlignment.Left,
                                 Parent = contentHolder
                             })
@@ -2268,7 +2268,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = keybind
                     })
@@ -2282,7 +2282,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(180, 180, 180),
                         Text = default and (keys[default] or tostring(default):gsub("Enum.KeyCode.", "")) or "NONE",
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Right,
                         Parent = keybind
                     })
@@ -2517,7 +2517,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = toggleKeybind
                     })
@@ -2546,7 +2546,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(180, 180, 180),
                         Text = default and (keys[default] or tostring(default):gsub("Enum.KeyCode.", "")) or "NONE",
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Right,
                         Parent = toggleKeybind
                     })
@@ -2793,7 +2793,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = colorPicker
                     })
@@ -2882,7 +2882,7 @@ function initLibrary()
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = table.concat({utility.get_rgb(default)}, ", "),
                         ClearTextOnFocus = false,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         PlaceholderText = "R,  G,  B",
                         Parent = picker
                     })
@@ -2913,7 +2913,7 @@ function initLibrary()
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = utility.rgb_to_hex(default),
                         ClearTextOnFocus = false,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         PlaceholderText = utility.rgb_to_hex(default),
                         Parent = picker
                     })
@@ -3259,7 +3259,7 @@ function initLibrary()
                         TextSize = 13,
                         TextColor3 = Color3.fromRGB(180, 180, 180),
                         Text = name,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Parent = icon
                     })
@@ -3330,7 +3330,7 @@ function initLibrary()
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = table.concat({utility.get_rgb(default)}, ", "),
                         ClearTextOnFocus = false,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         PlaceholderText = "R,  G,  B",
                         Parent = picker
                     })
@@ -3361,7 +3361,7 @@ function initLibrary()
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = utility.rgb_to_hex(default),
                         ClearTextOnFocus = false,
-                        Font = Enum.Font.Code,
+                        Font = Enum.Font.Arimo,
                         PlaceholderText = utility.rgb_to_hex(default),
                         Parent = picker
                     })
