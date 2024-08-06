@@ -358,7 +358,7 @@ function initLibrary()
             TextSize = 14,
             TextColor3 = Color3.fromRGB(255, 255, 255),
             Text = name,
-            Font = Enum.Font.GothamSemibold,
+            Font = Enum.Font.RobotoMono,
             TextXAlignment = Enum.TextXAlignment.Left,
             Parent = topbar
         })
@@ -434,7 +434,7 @@ function initLibrary()
                 TextSize = 14,
                 TextColor3 = Color3.fromRGB(255, 255, 255),
                 Text = name,
-                Font = toggled and Enum.Font.GothamSemibold or Enum.Font.Gotham,
+                Font = toggled and Enum.Font.RobotoMono or Enum.Font.Gotham,
                 Parent = tabTogglesHolder
             })
             
@@ -509,7 +509,7 @@ function initLibrary()
                 end
 
 
-                tabToggle.Font = Enum.Font.GothamSemibold
+                tabToggle.Font = Enum.Font.RobotoMono
 
 
                 for _, obj in next, tabs:GetChildren() do
@@ -573,7 +573,7 @@ function initLibrary()
                     TextSize = 13,
                     TextColor3 = Color3.fromRGB(255, 255, 255),
                     Text = name,
-                    Font = Enum.Font.GothamSemibold,
+                    Font = Enum.Font.RobotoMono,
                     TextXAlignment = Enum.TextXAlignment.Left,
                     Parent = sectionTopbar
                 })
@@ -1756,14 +1756,14 @@ function initLibrary()
                         end
 
 
-                        obj.Font = bool and Enum.Font.GothamSemibold or Enum.Font.Gotham
+                        obj.Font = bool and Enum.Font.RobotoMono or Enum.Font.Gotham
                         padding.PaddingLeft = bool and UDim.new(0, 10) or UDim.new(0, 6)
                         value.TextColor3 = bool and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180)
                     end
 
 
                     local function multiSelectObj(obj, padding, bool)
-                        obj.Font = bool and Enum.Font.GothamSemibold or Enum.Font.Gotham
+                        obj.Font = bool and Enum.Font.RobotoMono or Enum.Font.Gotham
                         padding.PaddingLeft = bool and UDim.new(0, 10) or UDim.new(0, 6)
                     end
                     
@@ -1781,7 +1781,7 @@ function initLibrary()
                             TextSize = 12,
                             TextColor3 = Color3.fromRGB(255, 255, 255),
                             Text = tostring(opt),
-                            Font = current == opt and Enum.Font.GothamSemibold or Enum.Font.Gotham,
+                            Font = current == opt and Enum.Font.RobotoMono or Enum.Font.Gotham,
                             TextXAlignment = Enum.TextXAlignment.Left,
                             Parent = contentHolder
                         })
@@ -1948,7 +1948,7 @@ function initLibrary()
                                 for i, v in next, contentHolder:GetChildren() do
                                     if v:IsA("TextButton") then
                                         v:FindFirstChildOfClass("UIPadding").PaddingLeft = UDim.new(0, 6)
-                                        v.Font = Enum.Font.GothamSemiBold
+                                        v.Font = Enum.Font.RobotoMono
                                     end
                                 end
 
@@ -1982,7 +1982,7 @@ function initLibrary()
                             TextSize = 12,
                             TextColor3 = Color3.fromRGB(255, 255, 255),
                             Text = tostring(opt),
-                            Font = current == opt and Enum.Font.GothamSemibold or Enum.Font.Gotham,
+                            Font = current == opt and Enum.Font.RobotoMono or Enum.Font.Gotham,
                             TextXAlignment = Enum.TextXAlignment.Left,
                             Parent = contentHolder
                         })
@@ -2105,7 +2105,7 @@ function initLibrary()
                                 TextSize = 12,
                                 TextColor3 = Color3.fromRGB(255, 255, 255),
                                 Text = tostring(opt),
-                                Font = current == opt and Enum.Font.GothamSemibold or Enum.Font.Gotham,
+                                Font = current == opt and Enum.Font.RobotoMono or Enum.Font.Gotham,
                                 TextXAlignment = Enum.TextXAlignment.Left,
                                 Parent = contentHolder
                             })
