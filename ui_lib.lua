@@ -789,7 +789,7 @@ function initLibrary()
                     if flag then
                         library.flags[flag] = toggled
                     end
-                    
+
 
                     callback(toggled)
 
@@ -801,8 +801,7 @@ function initLibrary()
                         Font = Enum.Font.SourceSans,
                         Parent = sectionContent
                     })
-                    local X = Instance.new("UICorner")
-                    X.Parent = toggle
+                    
                     local icon = utility.create("Frame", {
                         ZIndex = 3,
                         Size = UDim2.new(0, 14, 1, -2),
@@ -811,7 +810,7 @@ function initLibrary()
                         BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                         Parent = toggle
                     })
-                    
+
 
                     local iconGradient = utility.create("UIGradient", {
                         Rotation = 90,
