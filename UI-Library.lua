@@ -1,5 +1,5 @@
 function initLibrary()
-    local folderName = "lesion"
+    local folderName = "l3sion"
 
 
     if not isfolder(folderName) then
