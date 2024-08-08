@@ -136,14 +136,16 @@ local function ZBQG_fake_script() -- TextLabel.LocalScript
 
 	local StringLol = "<font color=\"#FFB95D\">lesion</font>  | "
 	local runservice = game:GetService("RunService") 
-	
+
 	local textlabel = script.Parent
 	textlabel.RichText = true
 	local fps
-	
+
 	runservice.RenderStepped:Connect(function(frametime)
 		fps = 1/frametime
 		textlabel.Text = StringLol .. tostring(math.floor(fps)) .. " fps"
 	end)
 end
 coroutine.wrap(ZBQG_fake_script)()
+
+return EnabledFeatures
