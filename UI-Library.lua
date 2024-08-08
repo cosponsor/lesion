@@ -17,7 +17,7 @@ function initLibrary()
 	local inputService = game:GetService("UserInputService")
 	local tweenService = game:GetService("TweenService")
 	local runService = game:GetService("RunService")
-	local coreGui = game:GetService("Players").LocalPlayer.PlayerGui
+	local coreGui = game:GetService("CoreGui")
 
 
 	local utility = {}
