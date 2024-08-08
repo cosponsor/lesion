@@ -2897,6 +2897,7 @@ function initLibrary()
 						BackgroundColor3 = default,
 						Parent = colorPicker
 					})
+                    Instance.new("UICorner", icon).CornerRadius = UDim.new(0,4)
 
 					local iconGradient = utility.create("UIGradient", {
 						Rotation = 90,
@@ -2985,7 +2986,7 @@ function initLibrary()
 						BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 						Parent = rgb
 					})
-
+                    
 					utility.create("UIGradient", {
 						Rotation = 90,
 						Color = ColorSequence.new(Color3.fromRGB(32, 32, 32), Color3.fromRGB(17, 17, 17)),
