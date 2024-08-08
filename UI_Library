@@ -14,10 +14,10 @@ function initLibrary()
         makefolder(gameConfigFolder)
     end
 
-	local inputService = game:GetService("UserInputService")
-	local tweenService = game:GetService("TweenService")
-	local runService = game:GetService("RunService")
-	local coreGui = game:GetService("CoreGui")
+local inputService = game:GetService('UserInputService');
+local tweenService = game:GetService('TweenService');
+local runService = game:GetService('RunService');
+local coreGui = game:GetService('CoreGui');
 
 
 	local utility = {}
@@ -797,6 +797,7 @@ function initLibrary()
 						TextXAlignment = Enum.TextXAlignment.Left,
 						Parent = sectionContent
 					})
+					Instance.new("UICorner", button)
 
 					utility.create("UIGradient", {
 						Rotation = 90,
