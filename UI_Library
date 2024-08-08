@@ -2593,7 +2593,7 @@ function initLibrary()
 						Parent = sectionContent
 					})
 				
-					local color = Color3.fromRGB(180, 180, 180)
+					local color = Color3.fromRGB(255, 255, 255)
 					if risky == true then
 						color = Color3.fromRGB(255, 37, 37)
 					end
@@ -2605,7 +2605,7 @@ function initLibrary()
 						BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 						FontSize = Enum.FontSize.Size14,
 						TextSize = 13,
-						TextColor3 = Color3.fromRGB(255, 255, 255),
+						TextColor3 = color,
 						Text = name,
 						Font = Enum.Font.Gotham,
 						TextXAlignment = Enum.TextXAlignment.Left,
