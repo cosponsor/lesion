@@ -1,0 +1,149 @@
+local lesion_side = Instance.new("ScreenGui")
+local SideFrame = Instance.new("Frame")
+local EnabledFeatures = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local QuickPeek = Instance.new("TextLabel")
+local BunnyHop = Instance.new("TextLabel")
+local BulletRedirection = Instance.new("TextLabel")
+local CStep = Instance.new("TextLabel")
+local LagPeek = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+lesion_side.Name = "lesion_side"
+lesion_side.Parent = game:GetService("CoreGui")
+lesion_side.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+lesion_side.DisplayOrder = 999999999
+lesion_side.ResetOnSpawn = false
+
+SideFrame.Name = "SideFrame"
+SideFrame.Parent = lesion_side
+SideFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+SideFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SideFrame.BackgroundTransparency = 0.670
+SideFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SideFrame.BorderSizePixel = 0
+SideFrame.Position = UDim2.new(0.944906473, 0, 0.411654294, 0)
+SideFrame.Size = UDim2.new(0, 159, 0, 205)
+
+EnabledFeatures.Name = "EnabledFeatures"
+EnabledFeatures.Parent = SideFrame
+EnabledFeatures.AnchorPoint = Vector2.new(0.5, 0.5)
+EnabledFeatures.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EnabledFeatures.BackgroundTransparency = 1.000
+EnabledFeatures.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EnabledFeatures.BorderSizePixel = 0
+EnabledFeatures.Position = UDim2.new(0.5, 0, 0.585357845, 0)
+EnabledFeatures.Size = UDim2.new(1, 1, 0.82928443, 1)
+
+UIListLayout.Parent = EnabledFeatures
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+QuickPeek.Name = "QuickPeek"
+QuickPeek.Parent = EnabledFeatures
+QuickPeek.AnchorPoint = Vector2.new(0.5, 0.5)
+QuickPeek.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+QuickPeek.BackgroundTransparency = 1.000
+QuickPeek.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickPeek.BorderSizePixel = 0
+QuickPeek.Position = UDim2.new(0.493710697, 0, 0.0871710554, 0)
+QuickPeek.Size = UDim2.new(1, 1, 0.108552635, 11)
+QuickPeek.Visible = false
+QuickPeek.Font = Enum.Font.GothamBold
+QuickPeek.Text = "quick peek"
+QuickPeek.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuickPeek.TextSize = 14.000
+
+BunnyHop.Name = "BunnyHop"
+BunnyHop.Parent = EnabledFeatures
+BunnyHop.AnchorPoint = Vector2.new(0.5, 0.5)
+BunnyHop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BunnyHop.BackgroundTransparency = 1.000
+BunnyHop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BunnyHop.BorderSizePixel = 0
+BunnyHop.Position = UDim2.new(0.493710697, 0, 0.0871710554, 0)
+BunnyHop.Size = UDim2.new(1, 1, 0.108552635, 11)
+BunnyHop.Visible = false
+BunnyHop.Font = Enum.Font.GothamBold
+BunnyHop.Text = "bunny hop"
+BunnyHop.TextColor3 = Color3.fromRGB(255, 255, 255)
+BunnyHop.TextSize = 14.000
+
+BulletRedirection.Name = "BulletRedirection"
+BulletRedirection.Parent = EnabledFeatures
+BulletRedirection.AnchorPoint = Vector2.new(0.5, 0.5)
+BulletRedirection.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BulletRedirection.BackgroundTransparency = 1.000
+BulletRedirection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BulletRedirection.BorderSizePixel = 0
+BulletRedirection.Position = UDim2.new(0.493710697, 0, 0.0871710554, 0)
+BulletRedirection.Size = UDim2.new(1, 1, 0.108552635, 11)
+BulletRedirection.Visible = false
+BulletRedirection.Font = Enum.Font.GothamBold
+BulletRedirection.Text = "bullet redirect"
+BulletRedirection.TextColor3 = Color3.fromRGB(255, 255, 255)
+BulletRedirection.TextSize = 14.000
+
+CStep.Name = "CStep"
+CStep.Parent = EnabledFeatures
+CStep.AnchorPoint = Vector2.new(0.5, 0.5)
+CStep.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CStep.BackgroundTransparency = 1.000
+CStep.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CStep.BorderSizePixel = 0
+CStep.Position = UDim2.new(0.493710697, 0, 0.0871710554, 0)
+CStep.Size = UDim2.new(1, 1, 0.108552635, 11)
+CStep.Visible = false
+CStep.Font = Enum.Font.GothamBold
+CStep.Text = "cstep"
+CStep.TextColor3 = Color3.fromRGB(255, 255, 255)
+CStep.TextSize = 14.000
+
+LagPeek.Name = "LagPeek"
+LagPeek.Parent = EnabledFeatures
+LagPeek.AnchorPoint = Vector2.new(0.5, 0.5)
+LagPeek.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LagPeek.BackgroundTransparency = 1.000
+LagPeek.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LagPeek.BorderSizePixel = 0
+LagPeek.Position = UDim2.new(0.493710697, 0, 0.0871710554, 0)
+LagPeek.Size = UDim2.new(1, 1, 0.108552635, 11)
+LagPeek.Visible = false
+LagPeek.Font = Enum.Font.GothamBold
+LagPeek.Text = "lag peek"
+LagPeek.TextColor3 = Color3.fromRGB(255, 255, 255)
+LagPeek.TextSize = 14.000
+
+TextLabel.Parent = SideFrame
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.493710697, 0, 0.0871710554, 0)
+TextLabel.Size = UDim2.new(1, 1, 0.108552635, 11)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "<font color=\"rgb(255, 185, 93)\">lesion</font>  | "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+-- Scripts:
+
+local function ZBQG_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local StringLol = "<font color=\"#FFB95D\">lesion</font>  | "
+	local runservice = game:GetService("RunService") 
+	
+	local textlabel = script.Parent
+	textlabel.RichText = true
+	local fps
+	
+	runservice.RenderStepped:Connect(function(frametime)
+		fps = 1/frametime
+		textlabel.Text = StringLol .. tostring(math.floor(fps)) .. " fps"
+	end)
+end
+coroutine.wrap(ZBQG_fake_script)()
