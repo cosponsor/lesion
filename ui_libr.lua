@@ -2892,12 +2892,12 @@ function initLibrary()
 					local icon = utility.create("Frame", {
 						ZIndex = 3,
 						Size = UDim2.new(0, 14, 0, 14),
-                        
 						BorderColor3 = Color3.fromRGB(22, 22, 22),
 						Position = UDim2.new(1, -22, 0, 1),
 						BackgroundColor3 = default,
 						Parent = colorPicker
 					})
+                    Instance.new("UICorner", icon).CornerRadius = UDim.new(0,4)
 
 					local iconGradient = utility.create("UIGradient", {
 						Rotation = 90,
@@ -2986,7 +2986,7 @@ function initLibrary()
 						BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 						Parent = rgb
 					})
-
+                    
 					utility.create("UIGradient", {
 						Rotation = 90,
 						Color = ColorSequence.new(Color3.fromRGB(32, 32, 32), Color3.fromRGB(17, 17, 17)),
