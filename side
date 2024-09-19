@@ -9,10 +9,14 @@ local CStep = Instance.new("TextLabel")
 local LagPeek = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
 
+local CoreGui
+local cloneref = cloneref or function(o) return o end
+CoreGui = cloneref(game:GetService("CoreGui"))
+
 --Properties:
 
 lesion_side.Name = "lesion_side"
-lesion_side.Parent = game:GetService("CoreGui")
+lesion_side.Parent = CoreGui
 lesion_side.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 lesion_side.DisplayOrder = 999999999
 lesion_side.ResetOnSpawn = false
