@@ -13,11 +13,12 @@ function initLibrary()
     if not isfolder(gameConfigFolder) then
         makefolder(gameConfigFolder)
     end
-
+local cloneref = cloneref or function(o) return o end
 local inputService = game:GetService('UserInputService');
 local tweenService = game:GetService('TweenService');
 local runService = game:GetService('RunService');
-local coreGui = game:GetService('CoreGui');
+local coreGui
+coreGui = cloneref(game:GetService("CoreGui"))
 
 
 	local utility = {}
